@@ -16,6 +16,10 @@ nav {
   border-radius: 5px;
 }
 
+.capitalize {
+  text-transform: capitalize;
+}
+
 .cajaPadre1 {
   padding: 5%;
   margin: 0px auto;
