@@ -1,0 +1,76 @@
+body {
+  background-color: #f7f7f7;
+  font-size: 16px;
+  /* determina em que valga 16px */
+  text-align: center;
+}
+
+.imgLogo {
+  width: 4rem;
+}
+
+nav {
+  background-color: #dd4646;
+  color: #e4e0e0;
+  filter: drop-shadow(10px 10px 30px #1a1919);
+  border-radius: 5px;
+}
+
+.cajaPadre1 {
+  padding: 5%;
+  margin: 0px auto;
+  border-radius: 20px;
+  filter: drop-shadow(10px 10px 30px #1a1919);
+  /* centrar DIV */
+  background-color: #dd4646;
+}
+.cajaPadre1 h2 {
+  font-size: 2rem;
+}
+.cajaPadre1 p {
+  font-size: 1rem;
+}
+.cajaPadre1 img {
+  width: 100%;
+  /*   20.2x16 =  pixeles 323,2px*/
+  height: auto;
+  display: block;
+  /* centra imagen    // o margin:0px auto;  */
+  margin: auto;
+  /*  centra imagen  // o  margin:0px auto;  */
+}
+.cajaPadre1 .cajaHijo1 {
+  padding: 2%;
+  height: 300px;
+  background-color: #b3adad;
+  border: #b3adad 5px solid;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+
+.cajaPadre1 .cajaHijo2 {
+  border: 1px solid rgba(48, 45, 45, 0.333);
+  height: 300px;
+  text-align: center;
+  padding: 8%;
+  background-color: #312f2f;
+  color: #d0d1d1;
+  border-radius: 20px;
+}
+
+footer {
+  background-color: #dd4646;
+  color: #e4e0e0;
+  filter: drop-shadow(10px 10px 30px #1a1919);
+  border-radius: 5px;
+}
+footer a {
+  color: #141010;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/*# sourceMappingURL=estilos.css.map */

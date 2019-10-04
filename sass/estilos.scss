@@ -1,0 +1,79 @@
+body {
+    background-color: rgb(247, 247, 247);
+    font-size: 16px;
+    /* determina em que valga 16px */
+    text-align: center;
+}
+
+.imgLogo {
+    width: 4rem;
+}
+nav {
+    background-color: rgb(221, 70, 70);
+    color: rgb(228, 224, 224);
+    filter: drop-shadow(10px 10px 30px rgb(26, 25, 25));
+    border-radius: 5px;
+}
+
+
+
+.cajaPadre1 {
+    
+    padding: 5%;
+    margin: 0px auto;
+    border-radius: 20px;
+    filter: drop-shadow(10px 10px 30px rgb(26, 25, 25));
+
+    /* centrar DIV */
+    background-color: rgb(221, 70, 70);
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    img {
+        width: 100%;
+        /*   20.2x16 =  pixeles 323,2px*/
+        height: auto;
+        display: block;
+        /* centra imagen    // o margin:0px auto;  */
+        margin: auto;
+        /*  centra imagen  // o  margin:0px auto;  */
+    }
+
+    .cajaHijo1 {
+        padding: 2%;
+        background-color: rgb(179, 173, 173);
+        border: rgb(179, 173, 173)5px solid;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        
+    }
+
+    .cajaHijo2 {
+
+        border: 1px solid rgba(48, 45, 45, 0.333);
+        text-align: initial;
+        padding: 8%;
+        background-color: rgb(49, 47, 47);
+        color: rgb(208, 209, 209);
+        border-radius: 20px;
+        
+    }
+
+}
+
+footer{
+background-color: rgb(221, 70, 70);
+color: rgb(228, 224, 224);
+filter: drop-shadow(10px 10px 30px rgb(26, 25, 25));
+border-radius: 5px;
+    
+    a{
+     color: rgb(20, 16, 16); 
+    }
+
+}
