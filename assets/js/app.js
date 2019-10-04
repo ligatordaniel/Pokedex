@@ -5,14 +5,13 @@ formulario.addEventListener('submit', function(e){     //addEventListen detecta 
   e.preventDefault();                              //evita que el formulario mande autocomplete en la  url por defecto
   console.log('me diste un click')
   var datos = new FormData(formulario);   // var nueva informacion de formulario de formulario 
-  console.log(datos.get('usuario'))       // pinta en consola el formulario con el name: usuario en formulario del html
-  const pokemon = (datos.get('usuario'))  
-        const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
+  console.log(datos.get('usuario'))       //pinta lo escrito en consola lo almacenado en input name:"usuario" en html form
+  const pokemon = (datos.get('usuario'))  // loguardamos en var pokemon
+        const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;   //url con comillas dinamicas insertamos var pokemon
         
 
-
         const img = document.getElementById('pokemonperfil');   //variables para facilitar uso
-        const info = document.getElementById('pokeinfo');
+        const info = document.getElementById('pokeinfo');     //variables para facilitar uso
               
         
             fetch(url)
@@ -34,3 +33,44 @@ formulario.addEventListener('submit', function(e){     //addEventListen detecta 
 
 })
 
+
+/*
+
+const pokedex = document.getElementById('pokedex');
+
+const fetchPokemon = () => {
+    const promises = [];
+    for (let i = 1; i <= 150; i++) {
+        const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
+        promises.push(fetch(url).then((res) => res.json()));
+    }
+    Promise.all(promises).then((results) => {
+        const pokemon = results.map((result) => ({
+            name: result.name,
+            image: result.sprites['front_default'],
+            type: result.types.map((type) => type.type.name).join(', '),
+            id: result.id
+        }));
+        displayPokemon(pokemon);
+    });
+};
+
+const displayPokemon = (pokemon) => {
+    console.log(pokemon);
+    const pokemonHTMLString = pokemon
+        .map(
+            (pokeman) => `
+        <li class="card">
+            <img class="card-image" src="${pokeman.image}"/>
+            <h2 class="card-title">${pokeman.id}. ${pokeman.name}</h2>
+            <p class="card-subtitle">Type: ${pokeman.type}</p>
+        </li>
+    `
+        )
+        .join('');
+    pokedex.innerHTML = pokemonHTMLString;
+};
+
+fetchPokemon();
+
+*/
